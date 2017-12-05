@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFx">
+   <children>
+      <SplitPane dividerPositions="0.6365914786967418" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #795548;">
+               <children>
+                  <ImageView fitHeight="467.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@assets/images/freesolo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane minHeight="300.0" prefHeight="200.0" prefWidth="489.0" style="-fx-background-color: #795548aa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="123.0" layoutY="528.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="123.0">
+                     <children>
+                        <JFXButton prefWidth="107.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="ABOUT US" textFill="#795548">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="31.0" prefWidth="107.0" styleClass="boton" stylesheets="@../control/application.css" text="SIGNIN" textFill="#f8f4f4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="123.0" layoutY="427.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="123.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" stylesheets="@../control/application.css" text="Create Your" textFill="#fffafa">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label stylesheets="@../control/application.css" text="Own Account" textFill="#fcfafa">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="318.0">
+               <children>
+                  <VBox layoutX="35.0" layoutY="61.0" minHeight="150.0" prefHeight="100.0" prefWidth="216.0" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="61.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="66.0" prefWidth="68.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="M" textFill="#f20b0b">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="FIRST NAME">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#ff4081" promptText="LAST NAME">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#ff4081" promptText="E-MAIL">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField focusColor="#ff4081" promptText="PASSWORD">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXPasswordField>
+                        <JFXPasswordField focusColor="#ff4081" promptText="REPEAD PASSWORD">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXPasswordField>
+                     </children>
+                  </VBox>
+                  <JFXButton layoutX="162.0" layoutY="529.0" onAction="#GetStarted" prefHeight="31.0" prefWidth="107.0" styleClass="boton2" stylesheets="@../control/application.css" text="GET STARTED" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="17.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXToggleButton layoutX="14.0" layoutY="515.0" text="UNDER 18?" toggleColor="#940000" toggleLineColor="#c27878" unToggleColor="#f51111" unToggleLineColor="#da7f7f" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="124.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.titulo{
+	
+	-fx-font-family: "Poiret One";
+}
+
+.boton{
+	-fx-text-fill:white;
+	-fx-border-color: #fff;
+	-fx-border-radius:10px;
+}
+
+.boton2{
+	-fx-text-fill:red;
+	-fx-border-color: red;
+	-fx-border-radius:10px;
+}
